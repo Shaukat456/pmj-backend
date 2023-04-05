@@ -1,10 +1,10 @@
-import express from 'express';
+import express, { Application } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import homeRoutes from './routes/homeRoutes';
 
-const app = express();
+const app: Application = express();
 const port = 80 || process.env.PORT;
 
 // Middlewares
@@ -16,6 +16,6 @@ app.use(morgan('tiny'));
 app.use('/', homeRoutes);
 
 // Start the server
-app.listen(port, () => {
+app.listen(port, (): void => {
   console.log(`Server running on port ${port}`);
 });
