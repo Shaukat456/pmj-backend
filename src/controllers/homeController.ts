@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
 
-export const index = (req: Request, res: Response) => {
-  res.send("Hello, world!");
+export const index = (req: Request, res: Response, next: NextFunction) => {
+  res.send('Hello, world!');
 };

@@ -7,13 +7,13 @@ interface User {
 const users: User[] = [
   {
     id: 1,
-    name: "randomUser1",
-    email: "randomUser1@ee.com",
+    name: 'randomUser1',
+    email: 'randomUser1@ee.com',
   },
   {
     id: 2,
-    name: "randomUser2",
-    email: "randomUser2@ee.com",
+    name: 'randomUser2',
+    email: 'randomUser2@ee.com',
   },
 ];
 
