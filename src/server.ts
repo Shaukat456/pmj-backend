@@ -13,7 +13,7 @@ app.use(cors());
 app.use(morgan('tiny'));
 
 // Routes
-app.use('/', homeRoutes);
+app.use('/home', homeRoutes);
 
 // Start the server
 app.listen(port, (): void => {
